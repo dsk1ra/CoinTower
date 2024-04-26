@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | CoinTower</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Boxicons CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name">CoinTower</span>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">CoinTower</span>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="index.html" class="nav-link">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="assets.html" class="nav-link">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="link">Assets</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="notifications.html" class="nav-link">
+              <i class="bx bx-bell icon"></i>
+              <span class="link">Notifications</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="support.html" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Support</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="charts.html" class="nav-link">
+              <i class="bx bx-pie-chart-alt-2 icon"></i>
+              <span class="link">Charts</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="settings.html" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="login.html" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mid">
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="index.html" class="breadcrumbs active">Home</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="assets-container">
+        <div class="assets-title">Assets</div>
+        <div class="assets-link"><a href="assets.html">More assets →</a></div>
+      </div>
+      <div class="rectangle-elements">
+        <div class="rectangle-element-list">
+          <div class="rectangle-title">Ethereum</div>
+          <div class="rectangle-element">
+            <canvas id="chart-1"></canvas>
+          </div>
+        </div>
+        <div class="rectangle-element-list">
+          <div class="rectangle-title">Solana</div>
+          <div class="rectangle-element">
+            <canvas id="chart-2"></canvas>
+          </div>
+
+        </div>
+        <div class="rectangle-element-list">
+          <div class="rectangle-title">Tron</div>
+          <div class="rectangle-element">
+            <canvas id="chart-3"></canvas>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="activity-container">
+        <div class="activity-title">Activity</div>
+        <div class="activity-link"><a href="assets.html">More activity →</a></div>
+      </div>
+      <div class="table">
+        <table class="activity-table-class">
+          <thead>
+            <tr>
+              <th class="transactions transactions-title">Transactions</th>
+              <th class="amount amount-title">Amount</th>
+              <th class="total total-title">Total</th>
+              <th class="status status-title">Status</th>
+              <th class="date date-title">Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="table-element">
+              <td class="transactions">
+                <img class="transaction-logo">
+                Litecoin Purchased
+              </td>
+              <td class="amount">0.98765</td>
+              <td class="total">$987.65</td>
+              <td class="status">Pending</td>
+              <td class="date">April 10, 2024</td>
+            </tr>
+            <tr class="table-element">
+              <td class="transactions">
+                <img class="transaction-logo">
+                Bitcoin Purchased
+              </td>
+              <td class="amount">0.54213</td>
+              <td class="total">$458.34</td>
+              <td class="status">Done</td>
+              <td class="date">March 15, 2024</td>
+            </tr>
+            <tr class="table-element">
+              <td class="transactions">
+                <img class="transaction-logo">
+                Ethereum Purchased
+              </td>
+              <td class="amount">0.12345</td>
+              <td class="total">$123.45</td>
+              <td class="status">Done</td>
+              <td class="date">January 20, 2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="crypto">
+      <div class="cryptocurrency-container">
+        <div class="cryptocurrencies-title">Cryptocurrencies</div>
+        <div class="cryptocurrencies-link"><a href="chart.html">More cryptocurrencies →</a></div>
+      </div>
+      <div class="table">
+        <table class="cryptocurrencies-table-class">
+          <thead>
+            <tr>
+              <th class="cryptocurrency cryptocurrency-title">Cryptocurrency</th>
+              <th class="updated updated-title">Updated</th>
+              <th class="change change-title">Change</th>
+              <th class="price price-title">Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="table-element">
+              <td class="cryptocurrency">
+                <img class="transaction-logo">
+                Bitcoin
+              </td>
+              <td class="updated"><span class="btc-updated">updated</span></td>
+              <td class="change"><span class="btc-change">change</span></td>
+              <td class="price"><span class="btc-price">price</span></td>
+            </tr>
+            <tr class="table-element">
+              <td class="cryptocurrency">
+                <img class="transaction-logo">
+                Ethereum
+              </td>
+              <td class="updated"><span class="eth-updated">updated</span></td>
+              <td class="change"><span class="eth-change">change</span></td>
+              <td class="price"><span class="eth-price">price</span></td>
+            </tr>
+            <tr class="table-element">
+              <td class="cryptocurrency">
+                <img class="transaction-logo">
+                Tether
+              </td>
+              <td class="updated"><span class="usdt-updated">updated</span></td>
+              <td class="change"><span class="usdt-change">change</span></td>
+              <td class="price"><span class="usdt-price">price</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Report a Bug</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 Cryptocurrency Banking App. All rights reserved.</p>
+    </div>
+  </footer>
+  <!--<script src="script.js"></script>-->
+  <script src="./js/menu.js"></script>
+  <script src="./js/charts.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  
+</body>
+
+</html>

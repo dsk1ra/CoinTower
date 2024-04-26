@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Support | CoinTower</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+
+
+  <!-- CSS -->
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+      </span>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+        </span>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="index.html" class="nav-link">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="assets.html" class="nav-link">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="link">Assets</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="notifications.html" class="nav-link">
+              <i class="bx bx-bell icon"></i>
+              <span class="link">Notifications</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="support.html" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Support</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="charts.html" class="nav-link">
+              <i class="bx bx-pie-chart-alt-2 icon"></i>
+              <span class="link">Charts</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="settings.html" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="login.html" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mid">
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="assets.html" class="breadcrumbs active">Assets</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="middle-sector-content">
+        <div class="main-info">
+          <div class="user-profile">
+            <img src="pfp.jpg" alt="Profile Picture" class="profile-picture profile-pic-assets" />
+            <div class="user-info">
+              <div class="user-info-line">Denys Skira</div>
+              <div class="user-info-line-copy"> User ID: <span class="id-copy" id="123456">123456 <i
+                    class="fa fa-copy"></i></span></div>
+              <div class="user-info-line">User Type: Personal</div>
+            </div>
+          </div>
+          <div class="total-balance">
+            <h1 class="top-total-balance">Total Balance</h1>
+            <h2 class="top-total-balance">$42,971.56</h2>
+          </div>
+          <div class="balance-breakdown">
+            <canvas id="balanceChart"></canvas>
+          </div>
+        </div>
+        <div class="table-balance">
+          <div class="table">
+            <table class="activity-table-class">
+              <thead>
+                <tr>
+                  <th class="transactions transactions-title">
+                    Coin
+                  </th>
+                  <th class="amount amount-title">Amount</th>
+                  <th class="total total-title">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-element">
+                  <td class="asset-line">
+                    <img class="transaction-logo" />
+                    Bitcoin (BTC)
+                  </td>
+                  <td class="amount">1.234</td>
+                  <td class="total">$65,432.12</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="asset-line">
+                    <img class="transaction-logo" />
+                    Ethereum (ETH)
+                  </td>
+                  <td class="amount">54.678</td>
+                  <td class="total">$23,145.89</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="asset-line">
+                    <img class="transaction-logo" />
+                    Litecoin (LTC)
+                  </td>
+                  <td class="amount">120.345</td>
+                  <td class="total">$12,034.50</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="asset-line">
+                    <img class="transaction-logo" />
+                    Ripple (XRP)
+                  </td>
+                  <td class="amount">5,678.90</td>
+                  <td class="total">$1,234.56</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="asset-line">
+                    <img class="transaction-logo" />
+                    Bitcoin Cash (BCH)
+                  </td>
+                  <td class="amount">34.567</td>
+                  <td class="total">$4,567.89</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="table">
+            <table class="activity-table-class">
+              <thead>
+                <tr>
+                  <th class="transactions transactions-title">Transactions</th>
+                  <th class="amount amount-title">Amount</th>
+                  <th class="total total-title">Total</th>
+                  <th class="status status-title">Status</th>
+                  <th class="date date-title">Date</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="table-element-activity">
+                  <td class="transactions">
+                    <img class="transaction-logo">
+                    Litecoin Purchased
+                  </td>
+                  <td class="amount">0.98765</td>
+                  <td class="total">$987.65</td>
+                  <td class="status">Pending</td>
+                  <td class="date">April 10, 2024</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="transactions">
+                    <img class="transaction-logo">
+                    Bitcoin Purchased
+                  </td>
+                  <td class="amount">0.54213</td>
+                  <td class="total">$458.34</td>
+                  <td class="status">Done</td>
+                  <td class="date">March 15, 2024</td>
+                </tr>
+                <tr class="table-element">
+                  <td class="transactions">
+                    <img class="transaction-logo">
+                    Ethereum Purchased
+                  </td>
+                  <td class="amount">0.12345</td>
+                  <td class="total">$123.45</td>
+                  <td class="status">Done</td>
+                  <td class="date">January 20, 2024</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="news">
+          <h2>Latest News</h2>
+          <div class="news-grid">
+            <div class="news-item">
+              <img src="https://static.news.bitcoin.com/wp-content/uploads/2024/02/robert-kiyosaki-100k-bitcoin.jpg"
+                alt="Bitcoin" class="news-image">
+              <h3 class="news-title"><a
+                  href="https://www.bloomberg.com/news/articles/2024-04-23/hong-kong-bitcoin-btc-ether-eth-etf-launches-to-test-crypto-hub-ambition">Hong
+                  Kong Crypto ETF Launches Will Test Ambition to Be Digital-Asset Hub</a></h3>
+              <p class="news-description">Hong Kong is set to follow in the footsteps of the US by listing a batch of
+                cryptocurrency exchange-traded funds, providing a window on whether the city is making progress on
+                fashioning a hub for digital assets.</p>
+            </div>
+            <div class="news-item">
+              <img src="https://www.bitcoinsistemi.com/wp-content/uploads/2024/03/sec-ethereum.jpeg" alt="Ethereum"
+                class="news-image">
+              <h3 class="news-title"><a
+                  href="https://www.coindesk.com/policy/2024/04/25/consensys-sues-sec-over-unlawful-seizure-of-authority-over-ethereum/">Consensys
+                  Sues SEC Over ‘Unlawful Seizure Of Authority’ Over Ethereum</a></h3>
+              <p class="news-description">Ethereum developer Consensys has filed a lawsuit against the U.S. Securities
+                and Exchange Commission, striking back against what the company calls an “unlawful seizure of authority”
+                over Ethereum by the federal regulator.</p>
+            </div>
+            <div class="news-item">
+              <img src="https://i-invdn-com.investing.com/news/LYNXNPEE1J1IK_L.jpg" alt="Solana" class="news-image">
+              <h3 class="news-title"><a
+                  href="https://www.investing.com/news/cryptocurrency-news/solana-sees-dramatic-increase-in-institutional-portfolios-coinshares-3399984">Solana
+                  sees ‘dramatic increase’ in institutional portfolios: CoinShares</a></h3>
+              <p class="news-description">IThe court had found Ripple violated federal securities laws by making
+                institutional sales of XRP but dismissed other allegations brought by the SEC.</p>
+            </div>
+            <div class="news-item">
+              <img src="https://u.today/sites/default/files/styles/736x/public/2024-04/47604.jpg" alt="Ripple"
+                class="news-image">
+              <h3 class="news-title"><a
+                  href="https://www.coindesk.com/policy/2024/04/23/ripple-says-10m-penalty-enough-rejects-secs-ask-of-195b-fine-in-final-judgment/">Ripple
+                  Says $10M Penalty Enough, Rejects SEC’s Ask of $1.95B Fine in Final Judgment</a></h3>
+              <p class="news-description">The Securities and Exchange Commission (SEC) has filed a lawsuit against
+                Ripple, alleging that the company's XRP token is a security and should be regulated as such.</p>
+            </div>
+            <div class="news-item">
+              <img src="https://cryptopotato.com/wp-content/uploads/2024/04/ADA-DOT-ETH_CB.jpg" alt="Polkadot"
+                class="news-image">
+              <h3 class="news-title"><a
+                  href="https://cryptopotato.com/cardano-ada-and-polkadot-dot-outperform-ethereum-eth-on-this-front-details/">Cardano
+                  (ADA) and Polkadot (DOT) Outperform Ethereum (ETH) on This
+                  Front: Details</a></h3>
+              <p class="news-description">“Our platform pulls notable github activity from project repositories via a
+                back-tested process to ensure only a team’s significant efforts to innovate and improve are included,”
+                Santiment explained.</p>
+            </div>
+            <div class="news-item">
+              <img src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2024-04/f46ce233-a675-4de8-95d5-69348b633d5b.jpg" alt="BONK"
+                class="news-image">
+              <h3 class="news-title"><a href="https://cointelegraph.com/news/bonk-popcat-and-solana-memecoins-stay-green-even-as-bitcoin-price-drops">BONK, POPCAT and Solana memecoins stay green even as Bitcoin price drops</a></h3>
+              <p class="news-description">“Memecoins in the Solana ecosystem defy the recent bearish downtrend in the
+                crypto market by managing to generate double-digit gains</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Report a Bug</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 CoinTower. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/menu.js"></script>
+  <script src="./js/assets.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
