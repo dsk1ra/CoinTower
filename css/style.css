@@ -321,11 +321,23 @@ html {
     transition: background-color 0.3s;
 }
 
+.table-coins {
+    width: 4rem;
+    height: 40rem;
+    border: 0.0625rem solid #737373;
+    border-radius: 0.5rem;
+    background-color: #2D3139;
+    padding: 1.5rem;
+    padding-bottom: 0.75rem;
+    transition: background-color 0.3s;
+}
+
 @media (min-width: 768px) {
 
     .activity-table-class,
     .cryptocurrencies-table-class,
-    .payment-history-table {
+    .payment-history-table,
+    .table-coins {
         width: calc(100% - 20px);
     }
 }
