@@ -864,7 +864,7 @@ footer {
 }
 
 .news {
-    width: 65rem;
+    width: 55rem;
     padding: .75rem;
     margin-top: 20px;
     justify-content: center;
@@ -924,7 +924,7 @@ footer {
 }
 
 .news-item {
-    width: 30rem;
+    width: 27rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     /* split the news-item into two equal rows */
