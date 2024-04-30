@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 backgroundColor: [
                     'rgba(247, 147, 26, 0.2)',
                     'rgba(142, 118, 255, 0.2)',
-                    'rgba(166, 169, 170, 0.2)',
-                    'rgba(35, 41, 47, 0.2)',
-                    'rgba(141, 195, 81, 0.2)'
+                    'rgba(130, 71, 229, 0.2)',
+                    'rgba(232, 65, 66, 0.2)',
+                    'rgba(101, 141, 71, 0.2)'
                 ],
                 borderColor: [
                     'rgba(247, 147, 26, 1)',
                     'rgba(142, 118, 255, 1)',
-                    'rgba(166, 169, 170, 1)',
-                    'rgba(35, 41, 47, 1)',
-                    'rgba(141, 195, 81, 1)'
+                    'rgba(130, 71, 229, 1)',
+                    'rgba(232, 65, 66, 1)',
+                    'rgba(101, 141, 71, 1)'
                 ],
                 borderWidth: 1
             }]
