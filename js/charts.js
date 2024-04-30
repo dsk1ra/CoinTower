@@ -43,13 +43,13 @@ async function renderChart(crypto, canvasId) {
         },
         elements: {
           line: {
-            tension: 0.4 // You can adjust the tension as per your preference
+            tension: 0.4
           },
           point: {
-            radius: 0 // You can adjust the point radius as per your preference
+            radius: 0
           },
           rectangle: {
-            borderRadius: 10 // You can adjust the borderRadius as per your preference
+            borderRadius: 10
           }
         }
       };

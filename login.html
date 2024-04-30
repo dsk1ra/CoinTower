@@ -5,8 +5,10 @@
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+
     <!--Stylesheet-->
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="./css/login.css" />
 </head>
 <body>
     <div class="background">
@@ -14,15 +16,18 @@
         <div class="shape"></div>
     </div>
     <form action="index.html">
-        <h3>Login Here</h3>
+        <h3>Login to Unlock Exclusive Features</h3>
+        <p>Get instant access to your account and start exploring the world of Cointower!</p>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <input type="text" placeholder="Email or Phone" id="username" required>
 
         <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password">
+        <input type="password" placeholder="Password" id="password" required>
 
-        <button type="submit">Log In</button>
+        <button type="submit" class="cta-btn">Log In Now</button>
+        <p>Don't have an account? <a href="register.html" class="register-link">Sign up now</a></p>
+        <p>Forgot password? <a href="forgot-password.html" class="forgot-password-link">Reset password</a></p>
     </form>
 </body>
 </html>

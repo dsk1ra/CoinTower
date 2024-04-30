@@ -5,25 +5,31 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support | CoinTower</title>
+  <title>Home | CoinTower</title>
   <!-- CSS -->
-  <link rel="stylesheet" href="menu.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/menu.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 
   <!-- Boxicons CSS -->
   <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+
 </head>
 
 <body>
   <nav class="navigation">
     <div class="logo">
       <i class="bx bx-menu menu-icon"></i>
-      <span class="logo-name">CoinTower</span>
+      <span class="logo-name"><img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+      </span>
+      <h1 class="logo-text">CoinTower</h1>
     </div>
     <div class="sidebar">
       <div class="logo">
         <i class="bx bx-menu menu-icon"></i>
-        <span class="logo-name">CoinTower</span>
+        <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+        </span>
+        <h1 class="logo-text">CoinTower</h1>
       </div>
 
       <div class="sidebar-content">
@@ -103,14 +109,12 @@
           <div class="rectangle-element">
             <canvas id="chart-2"></canvas>
           </div>
-
         </div>
         <div class="rectangle-element-list">
           <div class="rectangle-title">Tron</div>
           <div class="rectangle-element">
             <canvas id="chart-3"></canvas>
           </div>
-
         </div>
       </div>
     </div>
@@ -120,51 +124,24 @@
         <div class="activity-title">Activity</div>
         <div class="activity-link"><a href="assets.html">More activity →</a></div>
       </div>
-      <div class="table">
-        <table class="activity-table-class">
-          <thead>
-            <tr>
-              <th class="transactions transactions-title">Transactions</th>
-              <th class="amount amount-title">Amount</th>
-              <th class="total total-title">Total</th>
-              <th class="status status-title">Status</th>
-              <th class="date date-title">Date</th>
-            </tr>
-          </thead>
+      <div>
+        <div class="table">
+          <table class="payment-history-table">
+            <thead>
+              <tr>
+                <th class="transactions transactions-title">Transactions</th>
+                <th class="amount amount-title">Amount</th>
+                <th class="total total-title">Total</th>
+                <th class="status status-title">Status</th>
+                <th class="date date-title">Date</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr class="table-element">
-              <td class="transactions">
-                <img class="transaction-logo">
-                Litecoin Purchased
-              </td>
-              <td class="amount">0.98765</td>
-              <td class="total">$987.65</td>
-              <td class="status">Pending</td>
-              <td class="date">April 10, 2024</td>
-            </tr>
-            <tr class="table-element">
-              <td class="transactions">
-                <img class="transaction-logo">
-                Bitcoin Purchased
-              </td>
-              <td class="amount">0.54213</td>
-              <td class="total">$458.34</td>
-              <td class="status">Done</td>
-              <td class="date">March 15, 2024</td>
-            </tr>
-            <tr class="table-element">
-              <td class="transactions">
-                <img class="transaction-logo">
-                Ethereum Purchased
-              </td>
-              <td class="amount">0.12345</td>
-              <td class="total">$123.45</td>
-              <td class="status">Done</td>
-              <td class="date">January 20, 2024</td>
-            </tr>
-          </tbody>
-        </table>
+            <tbody id="payment-history-body">
+              <!-- Data will be populated here -->
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -190,27 +167,45 @@
                 <img class="transaction-logo">
                 Bitcoin
               </td>
-              <td class="updated"><span class="btc-updated">updated</span></td>
-              <td class="change"><span class="btc-change">change</span></td>
-              <td class="price"><span class="btc-price">price</span></td>
+              <td class="updated"><span class="bitcoin-updated">updated</span></td>
+              <td class="change"><span class="bitcoin-change">change</span></td>
+              <td class="price"><span class="bitcoin-price">price</span></td>
             </tr>
             <tr class="table-element">
               <td class="cryptocurrency">
                 <img class="transaction-logo">
                 Ethereum
               </td>
-              <td class="updated"><span class="eth-updated">updated</span></td>
-              <td class="change"><span class="eth-change">change</span></td>
-              <td class="price"><span class="eth-price">price</span></td>
+              <td class="updated"><span class="ethereum-updated">updated</span></td>
+              <td class="change"><span class="ethereum-change">change</span></td>
+              <td class="price"><span class="ethereum-price">price</span></td>
             </tr>
             <tr class="table-element">
               <td class="cryptocurrency">
                 <img class="transaction-logo">
-                Tether
+                Solana
               </td>
-              <td class="updated"><span class="usdt-updated">updated</span></td>
-              <td class="change"><span class="usdt-change">change</span></td>
-              <td class="price"><span class="usdt-price">price</span></td>
+              <td class="updated"><span class="solana-updated">updated</span></td>
+              <td class="change"><span class="solana-change">change</span></td>
+              <td class="price"><span class="solana-price">price</span></td>
+            </tr>
+            <tr class="table-element">
+              <td class="cryptocurrency">
+                <img class="transaction-logo">
+                Optimism
+              </td>
+              <td class="updated"><span class="optimism-updated">updated</span></td>
+              <td class="change"><span class="optimism-change">change</span></td>
+              <td class="price"><span class="optimism-price">price</span></td>
+            </tr>
+            <tr class="table-element">
+              <td class="cryptocurrency">
+                <img class="transaction-logo">
+                Pepe
+              </td>
+              <td class="updated"><span class="pepe-updated">updated</span></td>
+              <td class="change"><span class="pepe-change">change</span></td>
+              <td class="price"><span class="pepe-price">price</span></td>
             </tr>
           </tbody>
         </table>
@@ -220,51 +215,49 @@
   <footer>
     <div class="footer-container">
       <div class="footer-column">
-        <h3>Company</h3>
+        <h3><a href="company.html">Company</a></h3>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h3>Legal</h3>
+        <h3><a href="legal.html">Legal</a></h3>
         <ul>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="tos.html">Terms of Service</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h3>Support</h3>
+        <h3><a href="company.html">Support</a></h3>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Report a Bug</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="help-center.html">Help Center</a></li>
+          <li><a href="report-a-bug.html">Report a Bug</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Follow Us</h3>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/EdinburghNapierUniversity/">Facebook</a></li>
+          <li><a href="https://twitter.com/EdinburghNapier">Twitter</a></li>
+          <li><a href="https://www.instagram.com/edinburghnapier">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/school/edinburgh-napier-university">LinkedIn</a></li>
         </ul>
       </div>
     </div>
     <div class="copyright">
-      <p>&copy; 2023 Cryptocurrency Banking App. All rights reserved.</p>
+      <p>&copy; 2024 CoinTower. All rights reserved.</p>
     </div>
   </footer>
-  <!--<script src="script.js"></script>-->
   <script src="./js/menu.js"></script>
   <script src="./js/charts.js"></script>
   <script src="./js/script.js"></script>
+  <script src="./js/payment.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-  
 </body>
 
 </html>

@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Support | CoinTower</title>
+  <title>Assets | CoinTower</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/menu.css" />
 
 
   <!-- CSS -->
@@ -24,14 +24,16 @@
   <nav class="navigation">
     <div class="logo">
       <i class="bx bx-menu menu-icon"></i>
-      <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+      <span class="logo-name"><img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
       </span>
+      <h1 class="logo-text">CoinTower</h1>
     </div>
     <div class="sidebar">
       <div class="logo">
         <i class="bx bx-menu menu-icon"></i>
         <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
         </span>
+        <h1 class="logo-text">CoinTower</h1>
       </div>
 
       <div class="sidebar-content">
@@ -106,10 +108,11 @@
                     class="fa fa-copy"></i></span></div>
               <div class="user-info-line">User Type: Personal</div>
             </div>
+
           </div>
           <div class="total-balance">
             <h1 class="top-total-balance">Total Balance</h1>
-            <h2 class="top-total-balance">$42,971.56</h2>
+            <h2 class="top-total-balance"><span class="calculate-total"></span></h2>
           </div>
           <div class="balance-breakdown">
             <canvas id="balanceChart"></canvas>
@@ -130,151 +133,158 @@
               <tbody>
                 <tr class="table-element">
                   <td class="asset-line">
-                    <img class="transaction-logo" />
+                    <img class="transaction-logo"
+                      src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1696501400" />
                     Bitcoin (BTC)
                   </td>
-                  <td class="amount">1.234</td>
-                  <td class="total">$65,432.12</td>
+                  <td class="amount">0.4725</td>
+                  <td class="total">$30,037.42</td>
                 </tr>
                 <tr class="table-element">
                   <td class="asset-line">
-                    <img class="transaction-logo" />
+                    <img class="transaction-logo"
+                      src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1696501628" />
                     Ethereum (ETH)
                   </td>
-                  <td class="amount">54.678</td>
-                  <td class="total">$23,145.89</td>
+                  <td class="amount">5.46</td>
+                  <td class="total">$17,893.87</td>
                 </tr>
                 <tr class="table-element">
                   <td class="asset-line">
-                    <img class="transaction-logo" />
-                    Litecoin (LTC)
+                    <img class="transaction-logo"
+                      src="https://assets.coingecko.com/coins/images/4713/large/polygon.png?1698233745" />
+                    Polygon (MATIC)
                   </td>
-                  <td class="amount">120.345</td>
-                  <td class="total">$12,034.50</td>
+                  <td class="amount">1569.32</td>
+                  <td class="total">$1,154.70</td>
                 </tr>
                 <tr class="table-element">
                   <td class="asset-line">
-                    <img class="transaction-logo" />
-                    Ripple (XRP)
+                    <img class="transaction-logo"
+                      src="https://assets.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369" />
+                    Avalanche (AVAX)
                   </td>
-                  <td class="amount">5,678.90</td>
-                  <td class="total">$1,234.56</td>
+                  <td class="amount">31.50</td>
+                  <td class="total">$1,078.18</td>
                 </tr>
                 <tr class="table-element">
                   <td class="asset-line">
-                    <img class="transaction-logo" />
-                    Bitcoin Cash (BCH)
+                    <img class="transaction-logo"
+                      src="https://assets.coingecko.com/coins/images/28600/large/bonk.jpg?1696527587" />
+                    BONK (BONK)
                   </td>
-                  <td class="amount">34.567</td>
-                  <td class="total">$4,567.89</td>
+                  <td class="amount">6,843,000.00</td>
+                  <td class="total">$182.08</td>
                 </tr>
+
               </tbody>
             </table>
           </div>
-          <div class="table">
-            <table class="activity-table-class">
-              <thead>
-                <tr>
-                  <th class="transactions transactions-title">Transactions</th>
-                  <th class="amount amount-title">Amount</th>
-                  <th class="total total-title">Total</th>
-                  <th class="status status-title">Status</th>
-                  <th class="date date-title">Date</th>
-                </tr>
-              </thead>
+          <div>
+            <div>
+              <div class="table">
+                <table class="payment-history-table">
+                  <thead>
+                    <tr>
+                      <th class="transactions transactions-title">Transactions</th>
+                      <th class="amount amount-title">Amount</th>
+                      <th class="total total-title">Total</th>
+                      <th class="status status-title">Status</th>
+                      <th class="date date-title">Date</th>
+                    </tr>
+                  </thead>
 
-              <tbody>
-                <tr class="table-element-activity">
-                  <td class="transactions">
-                    <img class="transaction-logo">
-                    Litecoin Purchased
-                  </td>
-                  <td class="amount">0.98765</td>
-                  <td class="total">$987.65</td>
-                  <td class="status">Pending</td>
-                  <td class="date">April 10, 2024</td>
-                </tr>
-                <tr class="table-element">
-                  <td class="transactions">
-                    <img class="transaction-logo">
-                    Bitcoin Purchased
-                  </td>
-                  <td class="amount">0.54213</td>
-                  <td class="total">$458.34</td>
-                  <td class="status">Done</td>
-                  <td class="date">March 15, 2024</td>
-                </tr>
-                <tr class="table-element">
-                  <td class="transactions">
-                    <img class="transaction-logo">
-                    Ethereum Purchased
-                  </td>
-                  <td class="amount">0.12345</td>
-                  <td class="total">$123.45</td>
-                  <td class="status">Done</td>
-                  <td class="date">January 20, 2024</td>
-                </tr>
-              </tbody>
-            </table>
+                  <tbody id="payment-history-body">
+                    <!-- Data will be populated here -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
         <div class="news">
           <h2>Latest News</h2>
           <div class="news-grid">
             <div class="news-item">
-              <img src="https://static.news.bitcoin.com/wp-content/uploads/2024/02/robert-kiyosaki-100k-bitcoin.jpg"
-                alt="Bitcoin" class="news-image">
-              <h3 class="news-title"><a
-                  href="https://www.bloomberg.com/news/articles/2024-04-23/hong-kong-bitcoin-btc-ether-eth-etf-launches-to-test-crypto-hub-ambition">Hong
-                  Kong Crypto ETF Launches Will Test Ambition to Be Digital-Asset Hub</a></h3>
-              <p class="news-description">Hong Kong is set to follow in the footsteps of the US by listing a batch of
-                cryptocurrency exchange-traded funds, providing a window on whether the city is making progress on
-                fashioning a hub for digital assets.</p>
+              <div class="news-image-container">
+                <img src="https://static.news.bitcoin.com/wp-content/uploads/2024/02/robert-kiyosaki-100k-bitcoin.jpg"
+                  alt="Bitcoin" class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://www.bloomberg.com/news/articles/2024-04-23/hong-kong-bitcoin-btc-ether-eth-etf-launches-to-test-crypto-hub-ambition">Hong
+                    Kong Crypto ETF Launches Will Test Ambition to Be Digital-Asset Hub</a></h3>
+                <p class="news-description">Hong Kong is set to follow in the footsteps of the US by listing a batch of
+                  cryptocurrency exchange-traded funds, providing a window on whether the city is making progress on
+                  fashioning a hub for digital assets.</p>
+              </div>
             </div>
             <div class="news-item">
-              <img src="https://www.bitcoinsistemi.com/wp-content/uploads/2024/03/sec-ethereum.jpeg" alt="Ethereum"
-                class="news-image">
-              <h3 class="news-title"><a
-                  href="https://www.coindesk.com/policy/2024/04/25/consensys-sues-sec-over-unlawful-seizure-of-authority-over-ethereum/">Consensys
-                  Sues SEC Over ‘Unlawful Seizure Of Authority’ Over Ethereum</a></h3>
-              <p class="news-description">Ethereum developer Consensys has filed a lawsuit against the U.S. Securities
-                and Exchange Commission, striking back against what the company calls an “unlawful seizure of authority”
-                over Ethereum by the federal regulator.</p>
+              <div class="news-image-container">
+                <img src="https://www.bitcoinsistemi.com/wp-content/uploads/2024/03/sec-ethereum.jpeg" alt="Ethereum"
+                  class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://www.coindesk.com/policy/2024/04/25/consensys-sues-sec-over-unlawful-seizure-of-authority-over-ethereum/">Consensys
+                    Sues SEC Over ‘Unlawful Seizure Of Authority’ Over Ethereum</a></h3>
+                <p class="news-description">Ethereum developer Consensys has filed a lawsuit against the U.S. Securities
+                  and Exchange Commission, striking back against what the company calls an “unlawful seizure of
+                  authority” over Ethereum by the federal regulator.</p>
+              </div>
             </div>
             <div class="news-item">
-              <img src="https://i-invdn-com.investing.com/news/LYNXNPEE1J1IK_L.jpg" alt="Solana" class="news-image">
-              <h3 class="news-title"><a
-                  href="https://www.investing.com/news/cryptocurrency-news/solana-sees-dramatic-increase-in-institutional-portfolios-coinshares-3399984">Solana
-                  sees ‘dramatic increase’ in institutional portfolios: CoinShares</a></h3>
-              <p class="news-description">IThe court had found Ripple violated federal securities laws by making
-                institutional sales of XRP but dismissed other allegations brought by the SEC.</p>
+              <div class="news-image-container">
+                <img src="https://i-invdn-com.investing.com/news/LYNXNPEE1J1IK_L.jpg" alt="Solana" class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://www.investing.com/news/cryptocurrency-news/solana-sees-dramatic-increase-in-institutional-portfolios-coinshares-3399984">Solana
+                    sees ‘dramatic increase’ in institutional portfolios: CoinShares</a></h3>
+                <p class="news-description">IThe court had found Ripple violated federal securities laws by making
+                  institutional sales of XRP but dismissed other allegations brought by the SEC.</p>
+              </div>
             </div>
             <div class="news-item">
-              <img src="https://u.today/sites/default/files/styles/736x/public/2024-04/47604.jpg" alt="Ripple"
-                class="news-image">
-              <h3 class="news-title"><a
-                  href="https://www.coindesk.com/policy/2024/04/23/ripple-says-10m-penalty-enough-rejects-secs-ask-of-195b-fine-in-final-judgment/">Ripple
-                  Says $10M Penalty Enough, Rejects SEC’s Ask of $1.95B Fine in Final Judgment</a></h3>
-              <p class="news-description">The Securities and Exchange Commission (SEC) has filed a lawsuit against
-                Ripple, alleging that the company's XRP token is a security and should be regulated as such.</p>
+              <div class="news-image-container">
+                <img src="https://u.today/sites/default/files/styles/736x/public/2024-04/47604.jpg" alt="Ripple"
+                  class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://www.coindesk.com/policy/2024/04/23/ripple-says-10m-penalty-enough-rejects-secs-ask-of-195b-fine-in-final-judgment/">Ripple
+                    Says $10M Penalty Enough, Rejects SEC’s Ask of $1.95B Fine in Final Judgment</a></h3>
+                <p class="news-description">The Securities and Exchange Commission (SEC) has filed a lawsuit against
+                  Ripple, alleging that the company's XRP token is a security and should be regulated as such.</p>
+              </div>
             </div>
             <div class="news-item">
-              <img src="https://cryptopotato.com/wp-content/uploads/2024/04/ADA-DOT-ETH_CB.jpg" alt="Polkadot"
-                class="news-image">
-              <h3 class="news-title"><a
-                  href="https://cryptopotato.com/cardano-ada-and-polkadot-dot-outperform-ethereum-eth-on-this-front-details/">Cardano
-                  (ADA) and Polkadot (DOT) Outperform Ethereum (ETH) on This
-                  Front: Details</a></h3>
-              <p class="news-description">“Our platform pulls notable github activity from project repositories via a
-                back-tested process to ensure only a team’s significant efforts to innovate and improve are included,”
-                Santiment explained.</p>
+              <div class="news-image-container">
+                <img src="https://cryptopotato.com/wp-content/uploads/2024/04/ADA-DOT-ETH_CB.jpg" alt="Polkadot"
+                  class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://cryptopotato.com/cardano-ada-and-polkadot-dot-outperform-ethereum-eth-on-this-front-details/">Cardano
+                    (ADA) and Polkadot (DOT) Outperform Ethereum (ETH) on This Front: Details</a></h3>
+                <p class="news-description">“Our platform pulls notable github activity from project repositories via a
+                  back-tested process to ensure only a team’s significant efforts to innovate and improve are included,”
+                  Santiment explained.</p>
+              </div>
             </div>
             <div class="news-item">
-              <img src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2024-04/f46ce233-a675-4de8-95d5-69348b633d5b.jpg" alt="BONK"
-                class="news-image">
-              <h3 class="news-title"><a href="https://cointelegraph.com/news/bonk-popcat-and-solana-memecoins-stay-green-even-as-bitcoin-price-drops">BONK, POPCAT and Solana memecoins stay green even as Bitcoin price drops</a></h3>
-              <p class="news-description">“Memecoins in the Solana ecosystem defy the recent bearish downtrend in the
-                crypto market by managing to generate double-digit gains</p>
+              <div class="news-image-container">
+                <img
+                  src="https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=717/https://s3.cointelegraph.com/uploads/2024-04/f46ce233-a675-4de8-95d5-69348b633d5b.jpg"
+                  alt="BONK" class="news-image">
+              </div>
+              <div class="news-body">
+                <h3 class="news-title"><a
+                    href="https://cointelegraph.com/news/bonk-popcat-and-solana-memecoins-stay-green-even-as-bitcoin-price-drops">BONK,
+                    POPCAT and Solana memecoins stay green even as Bitcoin price drops</a></h3>
+                <p class="news-description">“Memecoins in the Solana ecosystem defy the recent bearish downtrend in the
+                  crypto market by managing to generate double-digit gains</p>
+              </div>
             </div>
           </div>
         </div>
@@ -285,37 +295,37 @@
   <footer>
     <div class="footer-container">
       <div class="footer-column">
-        <h3>Company</h3>
+        <h3><a href="company.html">Company</a></h3>
         <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h3>Legal</h3>
+        <h3><a href="legal.html">Legal</a></h3>
         <ul>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="tos.html">Terms of Service</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="cookie-policy.html">Cookie Policy</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h3>Support</h3>
+        <h3><a href="company.html">Support</a></h3>
         <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Report a Bug</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="help-center.html">Help Center</a></li>
+          <li><a href="report-a-bug.html">Report a Bug</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h3>Follow Us</h3>
         <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="https://www.facebook.com/EdinburghNapierUniversity/">Facebook</a></li>
+          <li><a href="https://twitter.com/EdinburghNapier">Twitter</a></li>
+          <li><a href="https://www.instagram.com/edinburghnapier">Instagram</a></li>
+          <li><a href="https://www.linkedin.com/school/edinburgh-napier-university">LinkedIn</a></li>
         </ul>
       </div>
     </div>
@@ -326,7 +336,8 @@
 
   <script src="./js/menu.js"></script>
   <script src="./js/assets.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./js/payment.js"></script>
+  <script src="./js/id_copy.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </body>

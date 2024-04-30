@@ -1,28 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all of the table-element elements
     var tableElements = document.querySelectorAll('.table-element');
-
-    // Create an empty array to store the data
     var data = [];
+    var labels = [];
 
-    // Loop through the table-element elements
     for (var i = 0; i < tableElements.length; i++) {
-        // Extract the text content of the total class
-        var total = tableElements[i].querySelector('.total').textContent;
-
-        // Remove the dollar sign and commas from the total
-        total = total.replace(/\$/g, '').replace(/,/g, '');
-
-        // Add the total to the data array
-        data.push(parseFloat(total));
+        var totalElement = tableElements[i].querySelector('.total');
+        var assetLineElement = tableElements[i].querySelector('.asset-line');
+    
+        if (totalElement && assetLineElement) {
+            var total = totalElement.textContent;
+            total = total.replace(/\$/g, '').replace(/,/g, '');
+            data.push(parseFloat(total));
+    
+            var assetLine = assetLineElement.textContent;
+            labels.push(assetLine.trim()); // trim to remove any whitespace
+        }
     }
 
-    // Create the chart with the data array
     var ctx = document.getElementById('balanceChart').getContext('2d');
     var balanceChart = new Chart(ctx, {
         type: 'pie',
         data: {
-            labels: ['Bitcoin (BTC)', 'Ether (ETH)', 'Litecoin (LTC)', 'Ripple (XRP)', 'Bitcoin Cash (BCH)'],
+            labels: labels, // use the extracted labels
             datasets: [{
                 label: '# of Coins',
                 data: data,
@@ -50,26 +49,26 @@ document.addEventListener('DOMContentLoaded', function () {
                     enabled: true
                 },
                 legend: {
-                    display: true,
+                    display: false,
                     position: 'left',
                     labels: {
                         boxWidth: 10,
                         padding: 5,
-                        color: '#FFFFFF', 
-                        generateLabels: function(chart) {
+                        color: '#FFFFFF',
+                        generateLabels: function (chart) {
                             var data = chart.data;
                             var labels = data.labels;
                             var datasets = data.datasets;
                             var dataset = datasets[0];
                             var backgroundColor = dataset.backgroundColor;
                             var data = dataset.data;
-                            var sum = data.reduce(function(a, b) {
+                            var sum = data.reduce(function (a, b) {
                                 return a + b;
                             }, 0);
-                            var percent = data.map(function(value) {
+                            var percent = data.map(function (value) {
                                 return Math.round(value / sum * 100) + '%';
                             });
-                            return labels.map(function(label, index) {
+                            return labels.map(function (label, index) {
                                 return {
                                     text: label + ' - ' + percent[index],
                                     fillStyle: backgroundColor[index],
@@ -79,20 +78,24 @@ document.addEventListener('DOMContentLoaded', function () {
                             });
                         }
                     },
-                    
-                    left: 10 // Move the legend 10 pixels to the left
+
+                    left: 10
                 }
             },
-            cutout: 20
+            cutout: 40
         }
     });
 });
-const idCopy = document.querySelector('.id-copy');
+const totalBalanceSpan = document.querySelector('.calculate-total');
+const totalCells = document.querySelectorAll('.total');
 
-idCopy.addEventListener('click', () => {
-  navigator.clipboard.writeText('123456');
-  idCopy.classList.add('copied');
-  setTimeout(() => {
-    idCopy.classList.remove('copied');
-  }, 1000);
+let totalBalance = 0;
+
+totalCells.forEach(cell => {
+    const totalValue = parseFloat(cell.textContent.replace(/\$/g, '').replace(/,/g, ''));
+    if (!isNaN(totalValue)) {
+        totalBalance += totalValue;
+    }
 });
+
+totalBalanceSpan.textContent = `$${totalBalance.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;

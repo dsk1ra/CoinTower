@@ -1,0 +1,58 @@
+[
+    {
+      "type": "Cardano Received",
+      "logo": "https://assets.coingecko.com/coins/images/975/large/cardano.png?1696502090",
+     "amount": "420.14",
+      "total": "$197.40",
+      "status": "Completed",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Dai Sent",
+      "logo": "https://assets.coingecko.com/coins/images/9956/large/Badge_Dai.png?1696509996",
+      "amount": "1,472.25",
+      "total": "$1,471.85",
+      "status": "Processing",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Solana Purchased",
+      "logo": "https://assets.coingecko.com/coins/images/4128/large/solana.png?1696504756",
+      "amount": "12.10",
+      "total": "$1,660.32",
+      "status": "Completed",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Solana Purchased",
+      "logo": "https://assets.coingecko.com/coins/images/4128/large/solana.png?1696504756",
+      "amount": "8.50",
+      "total": "$1,142.24",
+      "status": "Completed",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Toncoin Converted",
+      "logo": "https://assets.coingecko.com/coins/images/17980/large/ton_symbol.png?1696517498",
+      "amount": "27.07",
+      "total": "$149.89",
+      "status": "Completed",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Tether Converted",
+      "logo": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+      "amount": "150.00",
+      "total": "$149.89",
+      "status": "Completed",
+      "date": "20-04-2024"
+    },
+    {
+      "type": "Tether Purchased",
+      "logo": "https://assets.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+      "amount": "150.00",
+      "total": "$149.89",
+      "status": "Completed",
+      "date": "20-04-2024"
+    }
+  ]

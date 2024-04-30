@@ -7,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Support | CoinTower</title>
+    <title>Notifications | CoinTower</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="menu.css" />
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
 
     <!-- CSS -->
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
@@ -24,14 +23,16 @@
     <nav class="navigation">
         <div class="logo">
             <i class="bx bx-menu menu-icon"></i>
-            <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
+            <span class="logo-name"><img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
             </span>
+            <h1 class="logo-text">CoinTower</h1>
         </div>
         <div class="sidebar">
             <div class="logo">
                 <i class="bx bx-menu menu-icon"></i>
                 <span class="logo-name"> <img src="logo.png" alt="CoinTower" class="logo-name" id="logo-name">
                 </span>
+                <h1 class="logo-text">CoinTower</h1>
             </div>
 
             <div class="sidebar-content">
@@ -90,7 +91,7 @@
         <nav class="breadcrumbs">
             <ol>
                 <li><a href="index.html">Dashboard</a></li>
-                <li><a href="assets.html" class="breadcrumbs active">Assets</a>
+                <li><a href="notifications.html" class="breadcrumbs active">Notifications</a>
                 </li>
             </ol>
         </nav>
@@ -102,48 +103,127 @@
                         <i class="bx bx-check"></i>
                     </div>
                     <div class="notification-content">
-                        <p>Your transaction of 0.5 BTC to John Doe has been confirmed.</p>
+                        <p class="notification-unread">Your transaction of 0.5 BTC to John Doe has been confirmed.</p>
                         <span class="notification-time">Just now</span>
                     </div>
                 </div>
-                
+
                 <div class="notification">
                     <div class="notification-icon">
                         <i class="bx bx-info-circle"></i>
                     </div>
                     <div class="notification-content">
-                        <p>There is a new update available for the CoinTower app. Please update to the latest version to enjoy new features and improvements.</p>
+                        <p class="notification-unread">There is a new update available for the CoinTower website. Please
+                            refresh the page to access new content and improvements.</p>
                         <span class="notification-time">5 minutes ago</span>
                     </div>
                 </div>
-                
+
                 <div class="notification">
                     <div class="notification-icon">
                         <i class="bx bx-dollar"></i>
                     </div>
                     <div class="notification-content">
-                        <p>Your account balance has reached the limit of $10,000. Please consider withdrawing some funds to avoid any inconvenience.</p>
+                        <p>Your account balance has reached the limit of $10,000. Please consider withdrawing some funds
+                            to avoid any inconvenience.</p>
                         <span class="notification-time">10 minutes ago</span>
                     </div>
                 </div>
-                
+
                 <div class="notification">
                     <div class="notification-icon">
                         <i class="bx bx-transfer"></i>
                     </div>
                     <div class="notification-content">
-                        <p>A new transaction of 0.2 ETH from Jane Smith has been received.</p>
+                        <p>A new transaction of 0.2 ETH from Simon Wells has been received.</p>
                         <span class="notification-time">15 minutes ago</span>
                     </div>
                 </div>
-                
+
                 <div class="notification">
                     <div class="notification-icon">
                         <i class="bx bx-message-detail"></i>
                     </div>
                     <div class="notification-content">
-                        <p>You have a new message from the CoinTower support team regarding your recent inquiry. Please check your inbox for more details.</p>
+                        <p>You have a new message from the CoinTower support team regarding your recent inquiry. Please
+                            check your inbox for more details.</p>
                         <span class="notification-time">30 minutes ago</span>
+                    </div>
+                </div>
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-lock"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Your account password has been successfully updated. Please make sure to remember your new
+                            password for future logins.</p>
+                        <span class="notification-time">1 hour ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-chart"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>The price of Bitcoin has reached a new high of $70,000. Consider buying or selling to take
+                            advantage of the market trend.</p>
+                        <span class="notification-time">2 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-wallet"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Your wallet has been successfully linked to your bank account. You can now deposit and
+                            withdraw funds easily.</p>
+                        <span class="notification-time">3 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-error"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>There was an issue with your recent transaction. Please contact our support team for
+                            assistance.</p>
+                        <span class="notification-time">4 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-credit-card"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Your credit card has been successfully added to your account. You can now use it to buy
+                            cryptocurrencies.</p>
+                        <span class="notification-time">5 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-shield"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Congratulations! You have successfully enabled two-factor authentication on your account.
+                            This will provide an extra layer of security for your account and transactions.</p>
+                        <span class="notification-time">6 hours ago</span>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <div class="notification-icon">
+                        <i class="bx bx-gift"></i>
+                    </div>
+                    <div class="notification-content">
+                        <p>Congratulations! You have been awarded 10 free tokens for participating in our referral
+                            program.</p>
+                        <span class="notification-time">7 hours ago</span>
                     </div>
                 </div>
             </div>
@@ -152,37 +232,37 @@
     <footer>
         <div class="footer-container">
             <div class="footer-column">
-                <h3>Company</h3>
+                <h3><a href="company.html">Company</a></h3>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Legal</h3>
+                <h3><a href="legal.html">Legal</a></h3>
                 <ul>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="tos.html">Terms of Service</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="cookie-policy.html">Cookie Policy</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Support</h3>
+                <h3><a href="company.html">Support</a></h3>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Report a Bug</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="help-center.html">Help Center</a></li>
+                    <li><a href="report-a-bug.html">Report a Bug</a></li>
                 </ul>
             </div>
             <div class="footer-column">
                 <h3>Follow Us</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="https://www.facebook.com/EdinburghNapierUniversity/">Facebook</a></li>
+                    <li><a href="https://twitter.com/EdinburghNapier">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/edinburghnapier">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/school/edinburgh-napier-university">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
@@ -190,11 +270,7 @@
             <p>&copy; 2024 CoinTower. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="./js/menu.js"></script>
-    <script src="./js/assets.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </body>
 
 </html>
